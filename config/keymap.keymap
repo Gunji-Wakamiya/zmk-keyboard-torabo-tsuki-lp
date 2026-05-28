@@ -49,28 +49,28 @@
 &trans  &trans             &trans     &trans         &trans    &trans                          &trans         &trans        &trans        &trans        &trans          &trans
 &trans  &kp DOUBLE_QUOTES  &kp AMPS   &kp LPAR       &kp UP    &kp RPAR                        &kp MINUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH       &trans
 &trans  &kp LT             &kp GT     &kp LEFT       &kp DOWN  &kp RIGHT  &trans    &trans     &kp LS(EQUAL)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK    &trans
-&trans  &kp SEMI           &kp COLON  &kp LG(SLASH)  &kp LBKT  &kp RBKT   &mkp MB2  &kp EQUAL  &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE  &trans
+&trans  &kp SEMI           &kp COLON  &kp LG(SLASH)  &kp LBKT  &kp RBKT   &mkp MB1  &kp EQUAL  &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE  &trans
 &trans  &trans             &trans     &trans         &trans    &trans     &trans    &trans     &kp TAB        &trans        &trans        &trans        &trans          &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans    &trans        &trans        &trans         &trans                       &trans          &trans   &trans  &trans  &trans   &trans
-&trans  &kp SQT   &kp CARET     &kp LC(HOME)  &kp PAGE_UP    &kp LC(END)                  &kp LS(N6)      &kp F7   &kp F8  &kp F9  &kp F12  &trans
-&trans  &macro01  &macro02      &kp HOME      &kp PAGE_DOWN  &kp END      &trans  &trans  &kp LEFT_BRACE  &kp F4   &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp EXCL  &kp QUESTION  &kp HASH      &kp DLLR       &kp PRCNT    &trans  &trans  &kp LS(MINUS)   &kp F1   &kp F2  &kp F3  &kp F10  &trans
-&trans  &trans    &trans        &trans        &trans         &trans       &trans  &trans  &kp TAB         &kp DEL  &trans  &trans  &trans   &trans
+&trans  &trans    &trans        &trans        &trans         &trans                         &trans          &trans   &trans  &trans  &trans   &trans
+&trans  &kp SQT   &kp CARET     &kp LC(HOME)  &kp PAGE_UP    &kp LC(END)                    &kp LS(N6)      &kp F7   &kp F8  &kp F9  &kp F12  &trans
+&trans  &macro01  &macro02      &kp HOME      &kp PAGE_DOWN  &kp END      &trans    &trans  &kp LEFT_BRACE  &kp F4   &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp EXCL  &kp QUESTION  &kp HASH      &kp DLLR       &kp PRCNT    &mkp MB1  &trans  &kp LS(MINUS)   &kp F1   &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans    &trans        &trans        &trans         &trans       &trans    &trans  &kp TAB         &kp DEL  &trans  &trans  &trans   &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans   &trans        &trans        &trans                      &trans            &trans            &trans            &trans            &trans            &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LG(E)         &kp LC(P)         &kp LC(PLUS)      &kp LC(NUMBER_0)  &kp LC(MINUS)     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp LA(UP)        &kp LA(LEFT)      &kp LA(RIGHT)     &kp PIPE          &trans
-&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans            &trans            &trans            &trans            &trans
+&trans  &trans   &trans   &trans        &trans        &trans                        &trans            &trans            &trans            &trans            &trans            &trans
+&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &trans
+&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans    &trans  &kp LG(E)         &kp LC(P)         &kp LC(PLUS)      &kp LC(NUMBER_0)  &kp LC(MINUS)     &trans
+&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &mkp MB1  &trans  &kp SINGLE_QUOTE  &kp LA(UP)        &kp LA(LEFT)      &kp LA(RIGHT)     &kp PIPE          &trans
+&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans    &trans  &trans            &trans            &trans            &trans            &trans            &trans
             >;
         };
     };
