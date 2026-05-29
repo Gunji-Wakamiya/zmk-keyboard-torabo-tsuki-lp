@@ -39,7 +39,8 @@
 &none  &none             &none        &none        &none      &none                                   &none        &none  &none      &none     &none       &none
 &none  &mt LC(LSHFT) Q   &kp W        &kp E        &kp R      &kp T                                   &kp Y        &kp U  &kp I      &kp O     &kp P       &none
 &none  &kp E             &kp S        &kp D        &kp F      &kp G     &none        &none            &kp H        &kp J  &kp K      &kp L     &kp SEMI    &none
-&none &mt LEFT_SHIFT Z &kp X &kp C &kp V &kp B &mkp MB1 &kp MINUS &kp N &kp M &kp COMMA &kp DOT &lt 3 B &none
+// layer_0 の該当行を、layer_1 の構成に一時的に合わせる
+&trans  &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B  &mkp MB1  &kp MINUS  &kp N  &kp M  &kp COMMA  &kp DOT  &lt 3 B  &trans
 &none  &mt LCTRL F10     &mt LGUI F7  &mt LALT AT  &lt 3 ESC  &lt 2 F2  &lt 1 SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &none  &none      &kp RGUI  &kp DELETE  &none
             >;
         };
