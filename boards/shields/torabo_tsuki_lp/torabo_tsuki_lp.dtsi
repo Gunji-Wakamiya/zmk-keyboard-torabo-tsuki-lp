@@ -104,9 +104,6 @@
 };
 
 
-&combos {
-    timeout-ms = <150>; // 150msに拡大
-};
 
 &pinctrl {
     spi0_default: spi0_default {
