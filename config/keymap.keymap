@@ -14,7 +14,7 @@
         };
 
         henkan {
-            bindings = <&kp INT_HENKAN>;
+            bindings = <&kp DOLLAR>;
             key-positions = <33 34>;
         };
 
