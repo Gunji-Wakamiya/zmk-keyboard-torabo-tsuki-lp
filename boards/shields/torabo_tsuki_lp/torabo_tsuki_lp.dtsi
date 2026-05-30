@@ -9,6 +9,10 @@
         zmk,battery = &non_lipo_battery;
     };
 
+&combos {
+    timeout-ms = <150>; // 150msに拡大
+};
+
     size_s_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <14>;
