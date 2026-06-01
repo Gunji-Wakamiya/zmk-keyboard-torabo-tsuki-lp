@@ -1,5 +1,4 @@
-/ {
-    /* 共通のポインティングデバイス分割定義 */
+/{
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -10,26 +9,14 @@
         };
     };
 
-    /* リスナーA: 通常移動用 (レイヤー0, 1, 2) */
-    pointing_device_split_listener_move: pointing_device_split_listener_move {
+    pointing_device_split_listener: pointing_device_split_listener {
         compatible = "zmk,input-listener";
         device = <&pointing_device_split>;
         status = "okay";
-        layers = <0 1 2>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-                            &zip_xy_scaler 1 3  
-        >;
-     };
-
-    /* リスナーB: スクロール用 (レイヤー3) */
-    pointing_device_split_listener_scroll: pointing_device_split_listener_scroll {
-        compatible = "zmk,input-listener";
-        device = <&pointing_device_split>;
-        status = "okay";
-        layers = <3>;
         input-processors = <
-            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &zip_xy_to_scroll
+        &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+        &zip_xy_scaler 1 3
         >;
-    };
+   
+     };
 };
