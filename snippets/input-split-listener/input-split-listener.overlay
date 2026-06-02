@@ -1,4 +1,4 @@
-/ {
+/{
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -9,23 +9,14 @@
         };
     };
 
-    /* 通常移動用のリスナー (すべてのレイヤーで動作) */
-pointing_device_split_listener: pointing_device_split_listener {
-    compatible = "zmk,input-listener";
-    device = <&pointing_device_split>;
-    status = "okay";
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-};
-
-/* スクロール専用のリスナー (レイヤー3のみで動作するように、ZMKの内部でハンドリングさせる) */
-pointing_device_split_scroll_listener: pointing_device_split_scroll_listener {
-    compatible = "zmk,input-listener";
-    device = <&pointing_device_split>;
-    status = "okay";
-    /* レイヤー3が有効な時にこのリスナーを優先させる */
-    input-processors = <
+    pointing_device_split_listener: pointing_device_split_listener {
+        compatible = "zmk,input-listener";
+        device = <&pointing_device_split>;
+        status = "okay";
+        input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_scroll_mapper // ここでXY入力をスクロールに変換
-    >;
-};
+        &zip_xy_scaler 1 3
+        >;
+   
+     };
 };
