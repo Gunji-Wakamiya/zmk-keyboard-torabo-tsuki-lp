@@ -71,31 +71,31 @@
 
         layer_0 {
             bindings = <
-&kp ESC    &kp N1                &kp N2       &kp N3                     &kp N4        &kp N5                                    &kp N6       &kp N7    &kp N8    &kp N9    &kp N0                 &kp BSPC
-&kp TAB    &mt LC(LEFT_SHIFT) Q  &kp L        &kp U                      &kp COMMA     &kp PERIOD                                &kp F        &kp W     &kp R     &kp Y     &kp P                  &kp BSPC
-&kp CAPS   &kp E                 &kp I        &kp A                      &kp O         &mkp MB1    &mkp LCLK    &mkp RCLK        &kp K        &kp T     &kp N     &kp S     &mt LEFT_ALT H         &kp SQT
-&kp LSHFT  &mt LEFT_SHIFT Z      &kp X        &kp C                      &kp V         &mkp MB2    &mkp MB3     &underscore      &kp G        &kp D     &kp M     &kp J     &lt 3 B                &kp RSHFT
-&kp LCTRL  &mt LCTRL F10         &mt LGUI F7  &mt LALT LS(LEFT_BRACKET)  &lt 3 ESCAPE  &lt 2 F2    &lt 1 SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &kp BSPC  &kp RALT  &mkp MB1  &mt LEFT_SHIFT PERIOD  &kp RCTRL
+&kp ESC    &kp N1                &kp N2       &kp N3                 &kp N4        &kp N5                                    &kp N6       &kp N7    &kp N8    &kp N9    &kp N0                 &kp BSPC
+&kp TAB    &mt LC(LEFT_SHIFT) Q  &kp L        &kp U                  &kp COMMA     &kp PERIOD                                &kp F        &kp W     &kp R     &kp Y     &kp P                  &kp BSPC
+&kp CAPS   &kp E                 &kp I        &kp A                  &kp O         &mkp MB1    &mkp LCLK    &mkp RCLK        &kp K        &kp T     &kp N     &kp S     &mt LEFT_ALT H         &kp SQT
+&kp LSHFT  &mt LEFT_SHIFT Z      &kp X        &kp C                  &kp V         &mkp MB2    &mkp MB3     &underscore      &kp G        &kp D     &kp M     &kp J     &lt 3 B                &kp RSHFT
+&kp LCTRL  &mt LCTRL F10         &mt LGUI F7  &mt LALT LEFT_BRACKET  &lt 3 ESCAPE  &lt 2 F2    &lt 1 SPACE  &lt 1 BACKSPACE  &lt 2 ENTER  &kp BSPC  &kp RALT  &mkp MB1  &mt LEFT_SHIFT PERIOD  &kp RCTRL
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans                    &trans            &trans            &trans             &trans                                                  &trans             &trans        &trans        &trans        &trans                 &trans
-&trans  &kp LS(NUMBER_6)          &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                        &kp MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH              &trans
-&trans  &kp LT                    &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT         &trans                 &trans         &kp LS(SEMICOLON)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LEFT_ALT LS(SQT)   &trans
-&trans  &mt LEFT_SHIFT SEMICOLON  &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(F8)             &kp LS(MINUS)  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DELETE             &trans
-&trans  &trans                    &trans            &trans            &trans             &kp LC(MINUS)     &kp LC(LS(SEMICOLON))  &kp BACKSPACE  &kp TAB            &trans        &trans        &kp COMMA     &mt LEFT_SHIFT PERIOD  &trans
+&trans  &trans                             &trans            &trans            &trans             &trans                                              &trans             &trans        &trans        &trans        &trans                 &trans
+&trans  &mt LS(LEFT_CONTROL) LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                    &kp MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH              &trans
+&trans  &kp LT                             &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT            &trans          &trans         &kp LS(SEMICOLON)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LEFT_ALT LS(SQT)   &trans
+&trans  &mt LEFT_SHIFT SEMICOLON           &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH        &kp LS(F8)      &kp LS(MINUS)  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DELETE             &trans
+&trans  &trans                             &trans            &trans            &kp LS(INT1)       &kp INTERNATIONAL_5  &kp INT_HENKAN  &kp BACKSPACE  &kp TAB            &trans        &trans        &kp COMMA     &mt LEFT_SHIFT PERIOD  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans                      &trans            &trans           &trans           &trans                                       &trans     &trans   &trans  &trans            &trans          &trans
-&trans  &kp EQUAL                   &kp LS(NUMBER_7)  &kp LC(HOME)     &kp PAGE_UP      &kp LC(END)                                  &kp LS(K)  &kp F7   &kp F8  &kp F9            &kp F12         &trans
-&trans  &LArrow                     &RArrow           &kp HOME         &kp PAGE_DOWN    &kp END       &trans          &trans         &akira     &kp F4   &kp F5  &kp F6            &kp F11         &trans
-&trans  &mt LEFT_SHIFT EXCLAMATION  &kp QUESTION      &kp HASH         &kp DOLLAR       &kp PERCENT   &mkp MB3        &trans         &n89       &kp F1   &kp F2  &kp F3            &kp F10         &trans
-&trans  &mt LEFT_CONTROL INT_YEN    &kp BACKSLASH     &msc SCRL_RIGHT  &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &kp LC(ENTER)  &kp TAB    &kp DEL  &trans  &kp INT_MUHENKAN  &kp INT_HENKAN  &trans
+&trans  &trans                      &trans            &trans           &trans           &trans                                       &trans         &trans   &trans  &trans            &trans          &trans
+&trans  &kp EQUAL                   &kp LS(NUMBER_7)  &kp LC(HOME)     &kp PAGE_UP      &kp LC(END)                                  &kp LS(K)      &kp F7   &kp F8  &kp F9            &kp F12         &trans
+&trans  &LArrow                     &RArrow           &kp HOME         &kp PAGE_DOWN    &kp END       &trans          &trans         &akira         &kp F4   &kp F5  &kp F6            &kp F11         &trans
+&trans  &mt LEFT_SHIFT EXCLAMATION  &kp QUESTION      &kp HASH         &kp DOLLAR       &kp PERCENT   &mkp MB3        &trans         &n89           &kp F1   &kp F2  &kp F3            &kp F10         &trans
+&trans  &mt LEFT_CONTROL INT_YEN    &kp BACKSLASH     &msc SCRL_RIGHT  &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &kp LC(ENTER)  &kp LC(ENTER)  &kp DEL  &trans  &kp INT_MUHENKAN  &kp INT_HENKAN  &trans
             >;
         };
 
