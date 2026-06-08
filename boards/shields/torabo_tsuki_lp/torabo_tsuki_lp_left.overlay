@@ -3,5 +3,9 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    /* 既存のプロセッサに、レイヤー3専用のスクロール変換を追加 */
+    input-processors = <
+        &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+        &zip_layer_scroll 3  /* レイヤー3の時にスクロール変換を有効にするプロセッサ */
+    >;
 };
