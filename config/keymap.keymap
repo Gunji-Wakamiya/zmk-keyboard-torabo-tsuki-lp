@@ -15,7 +15,7 @@
 
         henkan {
             bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <33 34>;
+            key-positions = <16 17>;
         };
 
         muhenkan {
