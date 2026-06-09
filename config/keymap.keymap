@@ -15,12 +15,12 @@
 
         henkan {
             bindings = <&kp DOLLAR>;
-            key-positions = <33 34>;
+            key-positions = <16 17>;
         };
 
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
-            key-positions = <28 27>;
+            key-positions = <12 13>;
         };
 
         test {
