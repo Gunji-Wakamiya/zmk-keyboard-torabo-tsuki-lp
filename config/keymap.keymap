@@ -14,18 +14,13 @@
         };
 
         henkan {
-            bindings = <&kp DOLLAR>;
-            key-positions = <16 17>;
+            bindings = <&kp INTERNATIONAL_4>;
+            key-positions = <33 34>;
         };
 
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
-        };
-
-        test {
-            bindings = <&kp A>;
-            key-positions = <43 42>;
         };
     };
 
@@ -81,11 +76,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans                             &trans            &trans            &trans             &trans                                              &trans             &trans        &trans        &trans        &trans                 &trans
-&trans  &mt LS(LEFT_CONTROL) LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                    &kp MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH              &trans
-&trans  &kp LT                             &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT            &trans          &trans         &kp LS(SEMICOLON)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LEFT_ALT LS(SQT)   &trans
-&trans  &mt LEFT_SHIFT SEMICOLON           &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH        &kp LS(F8)      &kp LS(MINUS)  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DELETE             &trans
-&trans  &trans                             &trans            &trans            &kp LS(INT1)       &kp INTERNATIONAL_5  &kp INT_HENKAN  &kp BACKSPACE  &kp TAB            &trans        &trans        &kp COMMA     &mt LEFT_SHIFT PERIOD  &trans
+&trans  &trans                             &trans            &trans            &trans             &trans                                              &trans        &trans        &trans        &trans             &trans                 &trans
+&trans  &mt LS(LEFT_CONTROL) LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SQT)        &kp SLASH              &trans
+&trans  &kp LT                             &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT            &trans          &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SEMICOLON)  &mt LEFT_ALT MINUS     &trans
+&trans  &mt LEFT_SHIFT SEMICOLON           &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH        &mkp MB1        &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)      &kp DELETE             &trans
+&trans  &trans                             &trans            &trans            &kp LS(INT1)       &kp INTERNATIONAL_5  &kp INT_HENKAN  &kp BACKSPACE  &kp TAB       &trans        &trans        &kp COMMA          &mt LEFT_SHIFT PERIOD  &trans
             >;
         };
 
