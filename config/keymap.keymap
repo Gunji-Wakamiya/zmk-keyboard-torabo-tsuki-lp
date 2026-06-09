@@ -63,14 +63,14 @@
         toCAD: toCAD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp N &kp DOWN &kp ENTER>;
+            bindings = <&kp LS(RCLK) &kp N &kp DOWN &kp ENTER>;
             label = "TOCAD";
         };
 
         shortcut: shortcut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp S>;
+            bindings = <&kp LS(RCLK) &kp S>;
             label = "SHORTCUT";
         };
     };
