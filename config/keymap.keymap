@@ -22,16 +22,19 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
         };
+
+        scr_up {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <6 7>;
+        };
+
+        scr_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
-        underscore: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_4 &kp A &kp N &kp N &kp D &kp A &kp MINUS &kp SPACE &kp ENTER>;
-            label = "NEW_MACRO";
-        };
-
         akira: akira {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -59,20 +62,6 @@
             bindings = <&kp MINUS &kp GREATER_THAN>;
             label = "RARROW";
         };
-
-        toCAD: toCAD {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(RCLK) &kp N &kp DOWN &kp ENTER>;
-            label = "TOCAD";
-        };
-
-        shortcut: shortcut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(RCLK) &kp S>;
-            label = "SHORTCUT";
-        };
     };
 
     keymap {
@@ -90,21 +79,21 @@
 
         layer_1 {
             bindings = <
-&trans  &trans                             &trans            &trans            &trans             &trans                                              &trans        &trans        &trans        &trans             &trans                 &trans
-&trans  &mt LS(LEFT_CONTROL) LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SQT)        &kp SLASH              &trans
-&trans  &kp LT                             &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT            &trans          &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SEMICOLON)  &mt LEFT_ALT MINUS     &trans
-&trans  &mt LEFT_SHIFT SEMICOLON           &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH        &mkp MB1        &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)      &kp DELETE             &trans
-&trans  &trans                             &trans            &trans            &kp LS(INT1)       &kp INTERNATIONAL_5  &kp INT_HENKAN  &kp BACKSPACE  &kp TAB       &trans        &trans        &kp COMMA          &mt LEFT_SHIFT PERIOD  &trans
+&trans  &trans                             &trans            &trans            &trans             &trans                                                       &trans             &trans        &trans        &trans        &trans                 &trans
+&trans  &mt LS(LEFT_CONTROL) LS(NUMBER_6)  &kp LS(NUMBER_2)  &kp LS(NUMBER_8)  &kp UP             &kp LS(NUMBER_9)                                             &kp MINUS          &kp N7        &kp N8        &kp N9        &kp SLASH              &trans
+&trans  &kp LT                             &kp GT            &kp LEFT_ARROW    &kp DOWN           &kp RIGHT            &trans                   &trans         &kp LS(SEMICOLON)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt LEFT_ALT LS(SQT)   &trans
+&trans  &mt LEFT_SHIFT SEMICOLON           &kp SINGLE_QUOTE  &kp LG(SLASH)     &kp RIGHT_BRACKET  &kp BACKSLASH        &mkp MB1                 &kp LS(MINUS)  &kp N0             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DELETE             &trans
+&trans  &trans                             &trans            &trans            &kp LS(INT1)       &kp INTERNATIONAL_5  &kp LS(INTERNATIONAL_1)  &kp BACKSPACE  &kp TAB            &trans        &trans        &kp COMMA     &mt LEFT_SHIFT PERIOD  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans                      &trans            &trans        &trans          &trans                                      &trans         &trans   &trans  &trans            &trans          &trans
-&trans  &kp EQUAL                   &kp LS(NUMBER_7)  &kp LC(HOME)  &kp PAGE_UP     &kp LC(END)                                 &kp LS(K)      &kp F7   &kp F8  &kp F9            &kp F12         &trans
-&trans  &LArrow                     &RArrow           &kp HOME      &kp PAGE_DOWN   &kp END      &trans          &trans         &akira         &kp F4   &kp F5  &kp F6            &kp F11         &trans
-&trans  &mt LEFT_SHIFT EXCLAMATION  &kp QUESTION      &kp HASH      &kp DOLLAR      &kp PERCENT  &mkp MB3        &trans         &n89           &kp F1   &kp F2  &kp F3            &kp F10         &trans
-&trans  &mt LEFT_CONTROL INT_YEN    &kp BACKSLASH     &trans        &msc SCRL_DOWN  &mkp MB1     &msc SCRL_DOWN  &kp LC(ENTER)  &kp LC(ENTER)  &kp DEL  &trans  &kp INT_MUHENKAN  &kp INT_HENKAN  &trans
+&trans  &trans                      &trans            &trans        &trans         &trans                                      &trans         &trans   &trans  &trans            &trans          &trans
+&trans  &kp EQUAL                   &kp LS(NUMBER_7)  &kp LC(HOME)  &kp PAGE_UP    &kp LC(END)                                 &kp LS(K)      &kp F7   &kp F8  &kp F9            &kp F12         &trans
+&trans  &LArrow                     &RArrow           &kp HOME      &kp PAGE_DOWN  &kp END      &trans          &trans         &akira         &kp F4   &kp F5  &kp F6            &kp F11         &trans
+&trans  &mt LEFT_SHIFT EXCLAMATION  &kp QUESTION      &kp HASH      &kp DOLLAR     &kp PERCENT  &mkp MB3        &caps_word     &n89           &kp F1   &kp F2  &kp F3            &kp F10         &trans
+&trans  &mt LEFT_CONTROL INT_YEN    &kp BACKSLASH     &trans        &msc SCRL_UP   &mkp MB1     &msc SCRL_DOWN  &kp LC(ENTER)  &kp LC(ENTER)  &kp DEL  &trans  &kp INT_MUHENKAN  &kp INT_HENKAN  &trans
             >;
         };
 
