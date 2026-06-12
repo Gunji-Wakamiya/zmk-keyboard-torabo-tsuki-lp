@@ -32,6 +32,11 @@
             bindings = <&msc SCRL_DOWN>;
             key-positions = <28 29>;
         };
+
+        Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <36 50>;
+        };
     };
 
     macros {
