@@ -68,19 +68,11 @@
             label = "RARROW";
         };
 
-        toCAD: toCAD {
+        sent_to_cad: sent_to_cad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K_MENU) &kp N &kp DOWN &kp ENTER>;
-            label = "TOCAD";
-        };
-
-        short_cut: short_cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(C_MENU) &kp S>, <&macro_press>;
-
-            label = "SHORT_CUT";
+            bindings = <&mkp MB2 &kp UP_ARROW &kp ENTER &kp N &kp DOWN_ARROW &kp ENTER>;
+            label = "SENT_TO_CAD";
         };
     };
 
@@ -119,11 +111,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans                    &trans            &trans            &trans            &trans                                       &trans            &trans            &trans                 &trans                          &trans            &trans
-&trans  &bt BT_SEL 0              &bt BT_SEL 1      &kp LG(LC(LEFT))  &kp LG(UP)        &kp LC(LG(RIGHT))                            &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)       &kp LG(NUMBER_4)                &kp LG(NUMBER_5)  &trans
-&trans  &kp LG(LS(S))             &kp LC(LS(N))     &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(RIGHT)      &trans       &trans       &kp LG(E)         &kp LC(P)         &kp LC(LS(SEMICOLON))  &kp LC(NUMBER_0)                &kp LC(MINUS)     &trans
-&trans  &kp LA(NUMBER_1)          &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LG(LS(RIGHT))  &kp LC(S)    &kp LC(S)    &kp LC(Z)         &kp LA(UP_ARROW)  &kp LA(LEFT)           &mt LEFT_SHIFT LA(RIGHT_ARROW)  &trans            &trans
-&trans  &mt LEFT_CONTROL LG(TAB)  &kp LA(TAB)       &trans            &kp LC(W)         &kp LC(LS(TAB))    &kp LC(TAB)  &kp LG(TAB)  &kp LA(F4)        &trans            &trans                 &trans                          &kp LG(L)         &trans
+&trans  &trans                    &trans            &trans            &trans            &trans                                        &trans            &trans            &trans                 &trans                          &trans            &trans
+&trans  &bt BT_SEL 0              &bt BT_SEL 1      &kp LG(LC(LEFT))  &kp LG(UP)        &kp LC(LG(RIGHT))                             &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)       &kp LG(NUMBER_4)                &kp LG(NUMBER_5)  &trans
+&trans  &kp LG(LS(S))             &kp LC(LS(N))     &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(RIGHT)      &trans        &trans       &kp LG(E)         &kp LC(P)         &kp LC(LS(SEMICOLON))  &kp LC(NUMBER_0)                &kp LC(MINUS)     &trans
+&trans  &kp LA(NUMBER_1)          &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LG(LS(RIGHT))  &sent_to_cad  &kp LC(S)    &kp LC(Z)         &kp LA(UP_ARROW)  &kp LA(LEFT)           &mt LEFT_SHIFT LA(RIGHT_ARROW)  &trans            &trans
+&trans  &mt LEFT_CONTROL LG(TAB)  &kp LA(TAB)       &trans            &kp LC(W)         &kp LC(LS(TAB))    &kp LC(TAB)   &kp LG(TAB)  &kp LA(F4)        &trans            &trans                 &trans                          &kp LG(L)         &trans
             >;
         };
     };
